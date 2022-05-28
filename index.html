@@ -1,225 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    <title>Mateus da Silva</title>
-    <meta name="description" content="Sou Desenvolvedor Front-end, com conhecimentos em HTML, CSS, Javascript e Git/Github.
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <title>Mateus da Silva</title>
+  <meta name="description" content="Sou Desenvolvedor Front-end, com conhecimentos em HTML, CSS, Javascript e Git/Github.
     Além disso, possuo habilidades na área de UI/UX Design.">
 
-    
 
-    <script type="text/javascript">
-    
-      $(document).ready(function(){
-      
-        $(window).on('scroll',function(){
-      
-          var link = $('.navbar a.dot');
-          var top = $(window).scrollTop();
-      
-          $('.sec').each(function(){
-            var id = $(this).attr('id');
-            var height = $(this).height();
-            var offset = $(this).offset().top - 150;
-            if(top >= offset && top < offset + height){
-              link.removeClass('active');
-              $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
-            }
-          });
-      
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+
+      $(window).on('scroll', function () {
+
+        var link = $('.navbar a.dot');
+        var top = $(window).scrollTop();
+
+        $('.sec').each(function () {
+          var id = $(this).attr('id');
+          var height = $(this).height();
+          var offset = $(this).offset().top - 150;
+          if (top >= offset && top < offset + height) {
+            link.removeClass('active');
+            $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
+          }
         });
-      
+
       });
-      
-    </script>
+
+    });
+
+  </script>
 
 </head>
 
 <body>
 
-    <header>
-      
-
-      <a class="logo" href="#inicio">{ Mateus da Silva }</a>
+  <header>
 
 
-      <nav>
-        <a href="#projetos">( projetos )</a>
-        <a href="#contato">( contato )</a>
-      </nav>
-    
-    </header>
+    <a class="logo" href="#inicio">{ Mateus da Silva }</a>
 
 
-
-    <nav class="navbar">
-
-
-      <ul>
-
-        <li>
-          <a href="#inicio" class="dot active" data-scroll="inicio"></a>
-        </li>
-
-        <li>
-          <a href="#projetos" class="dot" data-scroll="projetos"></a>
-        </li>
-
-        <li>
-          <a href="#contato" class="dot" data-scroll="contato"></a>
-        </li>
-
-      </ul>
-
-
+    <nav>
+      <a href="#projetos">( projetos )</a>
+      <a href="#contato">( contato )</a>
     </nav>
 
+  </header>
 
 
 
-    <section class="sec" id="inicio">
+  <nav class="navbar">
 
 
-        <div class="ola" data-aos="fade-in" data-aos-duration="2000">
+    <ul>
 
-          <h2>Olá, eu sou</h2>
+      <li>
+        <a href="#inicio" class="dot active" data-scroll="inicio"></a>
+      </li>
 
-        </div>
+      <li>
+        <a href="#projetos" class="dot" data-scroll="projetos"></a>
+      </li>
 
+      <li>
+        <a href="#contato" class="dot" data-scroll="contato"></a>
+      </li>
 
-        <div class="mateus">
-
-          <h1 id="mateus-animation">Mateus</h1>
-
-        </div>
-
-
-        <div class="desenvolvedor" data-aos="fade-in" data-aos-duration="2000">
-
-          <h2>Desenvolvedor Front-end.</h2>
-
-        </div>
+    </ul>
 
 
-        <div class="inicio-socials" data-aos="fade-in" data-aos-duration="2000">
-
-          <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://github.com/mateuspdasilva">Github <i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="mailto:mateuspdasilva369@gmail.com">E-mail <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-
-        </div>
-
-
-    </section>
+  </nav>
 
 
 
 
-    <section class="sec" id="projetos">
-
- 
-        <div class="projetos-title" data-aos="fade-in" data-aos-duration="2000">
-
-          <h2>Projetos Selecionados</h2>
-
-        </div>
+  <section class="sec" id="inicio">
 
 
-        <div class="containers">
+    <div class="ola" data-aos="fade-in" data-aos-duration="2000">
 
-          <div class="container1" data-aos="fade-in" data-aos-duration="2000">
+      <h2>Olá, eu sou</h2>
 
-            <img src="./assets/img/brenda mockup.png">
-            <h2>Estética Brenda B.</h2>
-            <p>Website comercial para uma profissional de estética.</p><br>
-            <p>Feito com HTML, CSS e Javascript.</p>
-            <a href="https://esteticabrendab.netlify.app/">Visitar Projeto</a>
+    </div>
 
-          </div>
-    
 
-          <div class="container2" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="100">
+    <div class="mateus">
 
-            <img src="./assets/img/web3 mockup.png">
-            <h2>What is Web3</h2>
-            <p>Blog pessoal sobre as "eras" da Internet.</p><br>
-            <p>Feito com HTML, CSS e Javascript.</p>    
-            <a href="https://whatisweb3.netlify.app/">Visitar Projeto</a>
-    
-          </div>
+      <h1 id="mateus-animation">Mateus</h1>
 
-    
-          <div class="container3" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="100"> 
+    </div>
 
-            <img src="./assets/img/crypto mockup.png">
-            <h2>Crypto App.</h2>
-            <p>Design conceito de um aplicativo de criptomoedas</p><br>
-            <p>Feito com Figma.</p>
-            <a href="https://www.figma.com/community/file/1098965650148247477/Crypto-App.">Visitar Projeto</a>
 
-          </div>
+    <div class="desenvolvedor" data-aos="fade-in" data-aos-duration="2000">
 
-        </div>
+      <h2>Desenvolvedor Front-end.</h2>
 
-  
-    </section>
+    </div>
+
+
+    <div class="inicio-socials" data-aos="fade-in" data-aos-duration="2000">
+
+      <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/">Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/mateuspdasilva">Github <i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="mailto:mateuspdasilva369@gmail.com">E-mail <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+
+    </div>
+
+
+  </section>
 
 
 
 
-    <section class="sec" id="contato">
+  <section class="sec" id="projetos">
 
 
-      <div class="sobre-mim" data-aos="fade-in" data-aos-duration="2000">
+    <div class="projetos-title" data-aos="fade-in" data-aos-duration="2000">
 
-        <h2>Sobre Mim</h2>
-        <p>Sou Desenvolvedor Front-end, com conhecimentos em HTML, CSS, Javascript e Git/Github.</p><br>
-        <p>Além disso, possuo habilidades na área de UI/UX Design.</p>
+      <h2>Projetos Selecionados</h2>
+
+    </div>
+
+
+    <div class="containers">
+
+      <div class="container1" data-aos="fade-in" data-aos-duration="2000">
+
+        <img src="./assets/img/brenda mockup.png">
+        <h2>Estética Brenda B.</h2>
+        <p>Website comercial para uma profissional de estética.</p><br>
+        <p>Feito com HTML, CSS e Javascript.</p>
+        <a href="https://esteticabrendab.netlify.app/">Visitar Projeto</a>
 
       </div>
 
 
-      <div class="formulario" data-aos="fade-in" data-aos-duration="2000">
+      <div class="container2" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="100">
 
-        <h2>Contato</h2>
-        <form action="https://formsubmit.co/mateuspdasilva369@gmail.com" method="POST" class="form">  
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required/>
-          <label for="message">Mensagem</label>
-          <textarea name="message" id="message" required></textarea>
-          <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_next" value="https://mateusdasilva.netlify.app/obrigado"/>
-          <button type="submit">Enviar</button>
-        </form>
+        <img src="./assets/img/web3 mockup.png">
+        <h2>What is Web3</h2>
+        <p>Blog pessoal sobre as "eras" da Internet.</p><br>
+        <p>Feito com HTML, CSS e Javascript.</p>
+        <a href="https://whatisweb3.netlify.app/">Visitar Projeto</a>
 
-      </div> 
-
-
-    </section>
-
-    <div id="footer">
-
-      <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/mateuspdasilva"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="mailto:mateuspdasilva369@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </div>
 
-      <div class="footer-credits">
-       <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/">Desenvolvido por Mateus da Silva, 2022.</a>
+
+      <div class="container3" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="100">
+
+        <img src="./assets/img/crypto mockup.png">
+        <h2>Crypto App.</h2>
+        <p>Design conceito de um aplicativo de criptomoedas</p><br>
+        <p>Feito com Figma.</p>
+        <a href="https://www.figma.com/community/file/1098965650148247477/Crypto-App.">Visitar Projeto</a>
+
       </div>
 
     </div>
+
+
+  </section>
+
+
+
+
+  <section class="sec" id="contato">
+
+
+    <div class="sobre-mim" data-aos="fade-in" data-aos-duration="2000">
+
+      <h2>Tecnologias</h2>
+      <div class="grid-container">
+        <div class="item1"><img src="./assets/img/html-5.png"></div>
+        <div class="item2"><img src="./assets/img/css-3.png"></div>
+        <div class="item3"><img src="./assets/img/js.png"></div>
+        <div class="item4"><img src="./assets/img/figma.png"></div>
+        <div class="item5"><img src="./assets/img/wordpress.png"></div>
+        <div class="item6"><img src="./assets/img/git.png"></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="formulario" data-aos="fade-in" data-aos-duration="2000">
+
+      <h2>Contato</h2>
+      <form action="https://formsubmit.co/mateuspdasilva369@gmail.com" method="POST" class="form">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://mateusdasilva.netlify.app/obrigado" />
+        <button type="submit">Enviar</button>
+      </form>
+
+    </div>
+
+
+  </section>
+
+  <div id="footer">
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/mateuspdasilva"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="mailto:mateuspdasilva369@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="footer-credits">
+      <a href="https://www.linkedin.com/in/mateus-pereira-da-silva-bb6428230/">Desenvolvido por Mateus da Silva, 2022.</a>
+    </div>
+
+  </div>
 
 
 
@@ -232,4 +240,5 @@
 
 
 </body>
+
 </html>

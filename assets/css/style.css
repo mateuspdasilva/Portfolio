@@ -322,11 +322,17 @@ header nav a {
   font-size: 36px;
   font-weight: 500;
 }
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'item1 item2 item3'
+  'item4 item5 item6';
+  row-gap: 30px;
+  column-gap: 30px;
+} 
 
-.sobre-mim p {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
+.grid-container img {
+  width: 100px;
 }
 
 .formulario {
@@ -338,7 +344,7 @@ header nav a {
 
 .formulario h2 {
   display: flex;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
   margin-bottom: 40px;
   justify-content: center;
@@ -796,14 +802,18 @@ header nav a {
     font-weight: 500;
   }
 
-  .sobre-mim p {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 40px;
-    margin-right: 40px;
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'item1 item2 item3'
+    'item4 item5 item6';
+    row-gap: 30px;
+    column-gap: 30px;
+  } 
+  
+  .grid-container img {
+    width: 56px;
   }
-
   .formulario {
     display: flex;
     flex-direction: column;
